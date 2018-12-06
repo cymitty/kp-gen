@@ -3,84 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="kpgenerator-page">
+<div class="container-fluid">
+    <div class="row">
+        <div class="left col-4">
+            <div class="left-side">
 
-    <div class="left-side">
+                <div class="company-name-menu">
+                    <div class="col-form-label text">НАЗВАНИЕ КОМПАНИИ</div>
+                    <input id="company-name" class="form-control" type="text"  placeholder="Название компании" value="" >
+                </div>
 
-        <div class="company-name-menu">
-            <div class="text">Название компании</div>
-            <input type="text" id="input" placeholder="">
+                <div class="services-menu">
+                    <div class="col-form-label">УСЛУГИ</div>
+                    <div class="item site-development">
+                        <input id="site-development" type="checkbox" data-service-name="Разработка сайта">
+                        <label for="site-development">Разработка сайта</label>
+                    </div>
+
+                    <div class="item seo-promotion">
+                        <input id="seo-promotion" type="checkbox" data-service-name="SEO-продвижение">
+                        <label for="seo-promotion">SEO-продвижение</label>
+                    </div>
+
+                    <div class="item contextual-advertising">
+                        <input id="contextual-advertising" type="checkbox" data-service-name="Контекстная реклама">
+                        <label for="contextual-advertising">Контекстная реклама</label>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
+        <div class="right col-8">
+            <div class="content">
+                <div class="site-development-block">
+                    <h1>Разработка сайта</h1>
+                    <div class="cms">
+                        <div class="site-type">
+                            <div class="col-form-label">ТИП САЙТА</div>
+                            <div class="item">
+                                <input id="landing-page" type="radio" name="siteTypeRadio" data-type-name="Сайт-визитка" checked>
+                                <label for="landing-page" class="form-check-label">Сайт-визитка</label>
+                            </div>
+                            <div class="item">
+                                <input id="online-store" type="radio" name="siteTypeRadio" data-type-name="Интернет магазин">
+                                <label for="online-store" class="form-check-label">Интернет магазин</label>
+                            </div>
+                        </div>
 
-        <div class="services-menu">
+                        <div class="time">
+                            <input type="text" placeholder="Сроки">
+                        </div>
 
-            <div class="item site-development">
-                <input id="site-development" type="checkbox">
-                <label for="site-development">Разработка сайта</label>
+                        <div class="title">Выбор системы управления сайтом (CMS)</div>
+                        <div class="item"><input id="bitrix" type="checkbox"><label for="bitrix" class="form-check-label">Bitrix</label></div>
+                        <div class="item"><input id="wordpress" type="checkbox"><label for="wordpress" class="form-check-label">Wordpress</label></div>
+
+                        <div class="bitrix-block">
+                            <div class="col-form-label title">BITRIX</div>
+                            <div class="text">
+                                <textarea name="bitrix-text" id="bitrix-text-area" class="form-control" cols="30" rows="10" placeholder="Текст"></textarea>
+                            </div>
+                            <div class="price">
+                                <textarea name="bitrix-price" id="bitrix-price-area" class="form-control" cols="30" rows="10" placeholder="Прайс"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="wordpress-block">
+                            <div class="col-form-label title">WORDPRESS</div>
+                            <div class="text">
+                                <textarea name="wordpress-text" id="wordpress-text-area" class="form-control" cols="30" rows="10" placeholder="Текст"></textarea>
+                            </div>
+                            <div class="price">
+                                <textarea name="wordpress-price" id="wordpress-price-area" class="form-control" cols="30" rows="10" placeholder="Прайс"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
             </div>
-
-            <div class="item seo-promotion">
-                <input id="seo-promotion" type="checkbox">
-                <label for="seo-promotion">SEO-продвижение</label>
+            <div class="generate-block mt-3 mb-3">
+                <div class="generate-pdf btn btn-primary btn-lg btn-block">Создать КП</div>
             </div>
-
-            <div class="item contextual-advertising">
-                <input id="contextual-advertising" type="checkbox">
-                <label for="contextual-advertising">Контекстная реклама</label>
-            </div>
-
         </div>
-
     </div>
-
-    <div class="content">
-        <div class="site-development-block">
-            <div class="cms">
-                <div class="site-type">
-                    <div class="item">
-                        <input id="landing-page" type="radio">
-                        <label for="landing-page">Сайт-визитка</label>
-                    </div>
-                    <div class="item">
-                        <input id="online-store" type="radio">
-                        <label for="online-store">Интернет магазин</label>
-                    </div>
-                </div>
-
-                <div class="time">
-                    <input type="text" placeholder="Сроки">
-                </div>
-
-                <div class="title">Выбор системы управления сайтом (CMS)</div>
-                <div class="item"><input id="bitrix" type="checkbox"><label for="bitrix">Bitrix</label></div>
-                <div class="item"><input id="wordpress" type="checkbox"><label for="wordpress">Wordpress</label></div>
-
-                <div class="bitrix-block">
-                    <div class="title">Bitrix</div>
-                    <div class="text">
-                        <textarea name="bitrix-text" id="bitrix-text-area" cols="30" rows="10" placeholder="Текст"></textarea>
-                    </div>
-                    <div class="price">
-                        <textarea name="bitrix-price" id="bitrix-price-area" cols="30" rows="10" placeholder="Прайс"></textarea>
-                    </div>
-                </div>
-
-                <div class="wordpress-block">
-                    <div class="title">Wordpress</div>
-                    <div class="text">
-                        <textarea name="wordpress-text" id="wordpress-text-area" cols="30" rows="10" placeholder="Текст"></textarea>
-                    </div>
-                    <div class="price">
-                        <textarea name="wordpress-price" id="wordpress-price-area" cols="30" rows="10" placeholder="Прайс"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div>
 
 
-    </div>
+
 
     <!--<div class="templates">
 

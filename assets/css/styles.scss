@@ -1,16 +1,33 @@
 .kpgenerator-page {
   display: flex;
+  height: 100vh;
+}
+
+.kpgenerator-page > .container-fluid > .row {
+  height: 100vh;
+}
+.left {
+  //background: #3f4a57;
+  border-right: 2px solid #3f4a57;
+}
+
+.right {
+  //background: #262f39;
 }
 
 .left-side {
 }
 
 .content {
+  position: relative;
   flex: 1 0 auto;
   margin: 0 auto;
 
-  .cms {
+  .site-development-block {
     display: none;
+  }
+  .cms {
+
 
     .bitrix-block {
       display: none;
@@ -18,5 +35,10 @@
     .wordpress-block {
       display: none;
     }
+  }
+  .generate-block {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
   }
 }

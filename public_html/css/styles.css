@@ -1,14 +1,26 @@
 .kpgenerator-page {
-  display: flex; }
+  display: flex;
+  height: 100vh; }
+
+.kpgenerator-page > .container-fluid > .row {
+  height: 100vh; }
+
+.left {
+  border-right: 2px solid #3f4a57; }
 
 .content {
+  position: relative;
   flex: 1 0 auto;
   margin: 0 auto; }
-  .content .cms {
+  .content .site-development-block {
     display: none; }
-    .content .cms .bitrix-block {
-      display: none; }
-    .content .cms .wordpress-block {
-      display: none; }
+  .content .cms .bitrix-block {
+    display: none; }
+  .content .cms .wordpress-block {
+    display: none; }
+  .content .generate-block {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; }
 
 /*# sourceMappingURL=styles.css.map */
