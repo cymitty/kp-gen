@@ -1,0 +1,22 @@
+.kpgenerator-page {
+  display: flex;
+}
+
+.left-side {
+}
+
+.content {
+  flex: 1 0 auto;
+  margin: 0 auto;
+
+  .cms {
+    display: none;
+
+    .bitrix-block {
+      display: none;
+    }
+    .wordpress-block {
+      display: none;
+    }
+  }
+}

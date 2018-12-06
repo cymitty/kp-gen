@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="kpgenerator-page">
+
+    <div class="left-side">
+
+        <div class="company-name-menu">
+            <div class="text">Название компании</div>
+            <input type="text" id="input" placeholder="">
+        </div>
+
+        <div class="services-menu">
+
+            <div class="item site-development">
+                <input id="site-development" type="checkbox">
+                <label for="site-development">Разработка сайта</label>
+            </div>
+
+            <div class="item seo-promotion">
+                <input id="seo-promotion" type="checkbox">
+                <label for="seo-promotion">SEO-продвижение</label>
+            </div>
+
+            <div class="item contextual-advertising">
+                <input id="contextual-advertising" type="checkbox">
+                <label for="contextual-advertising">Контекстная реклама</label>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="site-development-block">
+            <div class="cms">
+                <div class="site-type">
+                    <div class="item">
+                        <input id="landing-page" type="radio">
+                        <label for="landing-page">Сайт-визитка</label>
+                    </div>
+                    <div class="item">
+                        <input id="online-store" type="radio">
+                        <label for="online-store">Интернет магазин</label>
+                    </div>
+                </div>
+
+                <div class="time">
+                    <input type="text" placeholder="Сроки">
+                </div>
+
+                <div class="title">Выбор системы управления сайтом (CMS)</div>
+                <div class="item"><input id="bitrix" type="checkbox"><label for="bitrix">Bitrix</label></div>
+                <div class="item"><input id="wordpress" type="checkbox"><label for="wordpress">Wordpress</label></div>
+
+                <div class="bitrix-block">
+                    <div class="title">Bitrix</div>
+                    <div class="text">
+                        <textarea name="bitrix-text" id="bitrix-text-area" cols="30" rows="10" placeholder="Текст"></textarea>
+                    </div>
+                    <div class="price">
+                        <textarea name="bitrix-price" id="bitrix-price-area" cols="30" rows="10" placeholder="Прайс"></textarea>
+                    </div>
+                </div>
+
+                <div class="wordpress-block">
+                    <div class="title">Wordpress</div>
+                    <div class="text">
+                        <textarea name="wordpress-text" id="wordpress-text-area" cols="30" rows="10" placeholder="Текст"></textarea>
+                    </div>
+                    <div class="price">
+                        <textarea name="wordpress-price" id="wordpress-price-area" cols="30" rows="10" placeholder="Прайс"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--<div class="templates">
+
+        <div class="bitrix-block-template">
+            <div class="title">Bitrix</div>
+            <div class="text">
+                <textarea name="bitrix-text" id="bitrix-text-area" cols="30" rows="10" placeholder="Текст"></textarea>
+            </div>
+            <div class="price">
+                <textarea name="bitrix-price" id="bitrix-price-area" cols="30" rows="10" placeholder="Прайс"></textarea>
+            </div>
+        </div>
+
+        <div class="wordpress-block-template">
+            <div class="title">Wordpress</div>
+            <div class="text">
+                <textarea name="wordpress-text" id="wordpress-text-area" cols="30" rows="10" placeholder="Текст"></textarea>
+            </div>
+            <div class="price">
+                <textarea name="wordpress-price" id="wordpress-price-area" cols="30" rows="10" placeholder="Прайс"></textarea>
+            </div>
+        </div>
+
+    </div>-->
+
+    <script src="js/app.js"></script>
+</body>
+</html>
